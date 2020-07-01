@@ -15,15 +15,19 @@ export default function DisplayOrder({ object }) {
   // {item.map(i=><div>{i}</div>)}
 
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">{object.orderId}</div>
-        <div class="col-sm">{object.customerId}</div>
-        <div class="col-sm">{object.pin}</div>
-        <div class="col-sm">{object.date}</div>
-        <div class="col-sm">{item.map((i, idx)=><div key={idx}>{i}</div>)}</div>
+    <div className="container">
+      <div className="row">
+        <div className="col-10 mx-auto col-lg-2">{object.orderId}</div>
+        <div className="col-10 mx-auto col-lg-2">{object.customerId}</div>
+        <div className="col-10 mx-auto col-lg-2">{object.pin}</div>
+        <div className="col-10 mx-auto col-lg-2">{object.date}</div>
+        <div className="col-10 mx-auto col-lg-2">
+          {item.map((i, idx) => (
+            <div key={idx}>{i}</div>
+          ))}
+        </div>
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 }

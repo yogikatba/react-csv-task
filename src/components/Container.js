@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Container() {
   return (
-    <div class="container">
+    <div className="container">
       <hr />
-      <div class="row">
-        <div class="col-sm">Order Id</div>
-        <div class="col-sm">Cust Id</div>
-        <div class="col-sm">Pin Code</div>
-        <div class="col-sm">Order Date</div>
-        <div class="col-sm">Items</div>
+      <div className="row">
+        <div className="col-10 mx-auto col-lg-2">Order Id</div>
+        <div className="col-10 mx-auto col-lg-2">Cust Id</div>
+        <div className="col-10 mx-auto col-lg-2">Pin Code</div>
+        <div className="col-10 mx-auto col-lg-2">Order Date</div>
+        <div className="col-10 mx-auto col-lg-2">Items</div>
       </div>
       <hr />
     </div>
